@@ -27,18 +27,18 @@ class CallModule
   include Math
   include SubModule
   
-  def test_add(x,y)
-    r = add(x,y)
+  def test_add(x,y,r)
+    r = add(x,y,r)
 	print "add : x = ",x," y = ",y," result = ",r,"\n"
   end
   
-  def test_average(x,y)
-    r = average(x,y)
+  def test_average(x,y,r)
+    r = average(x,y,r)
 	print "average : x = ",x," y = ",y," result = ",r,"\n"
   end
   
   def show_debug()
-    debug
+    debug.stack
   end
 end
 
